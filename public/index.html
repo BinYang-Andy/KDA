@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">K/DA</a>
+         
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="#girls" class="navbar__links" id="girls-page">Girls</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">Abouts</a>
+                </li>
+
+                <li class="navbar__btn">
+                    <a class="button" onclick="document.getElementById('signup').style.display='block'" target=_blank>Sign Up</a>     
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="modal" id="signup">
+        <span onlick="document.getElementById('signup').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form action="/sign_up" method = "post" class="modal-content">
+        <div class="popup__container">
+            <h1>Sign Up</h1><br>
+            <p>Please fill in this form to create an account</p>
+            <hr>
+            <label for="email"><b>Email</b></label><br>
+            <input type="email" placeholder="Email" name="email" required><br>
+
+            <label for="psw"><b>Password</b></label><br>
+            <input type="password" placeholder="New Password" name="password" required><br>
+
+            <label for="full_name"><b>Full Name</b></label><br>
+            <input type="text" placeholder="Full Name" name="full_name" required><br>
+            
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">Remember me
+            </label>
+
+            <p>By creating an account you agree to our<a href="https://www.riotgames.com/en/terms-of-service?_gl=1*b4kej8*_ga*MTcxNjc3MjYxNi4xNjAwNDc4MDE0*_ga_FXBJE5DEDD*MTYzNzUxNjQ3NS43OS4wLjE2Mzc1MTY0NzkuNTY." style="color:dodgerblue">Term & Privacy</a></p>
+            <br>
+            <div class="clearfix">
+                <button class="cancelbtn" type="button" onclick="document.getElementById('signup').style.display='none'">Cancel</button>
+                <button class="signupbtn" type="submit" onclick="register()" target = _blank><link href = "signup.html">Register</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+    <!--second part-->
+ <div class="kda" id="home">
+        <img src = "/img/KDA1.jpg" height=100% width= 100% >
+        <div class="kda__container">
+            <h1 class="kda__heading">K/DA FAN CLUB</h1>
+            <h3 class="kda__heading2">FOLLOW K/DA</h3>
+        </div>
+        <div class="icons">
+            <a href="https://www.instagram.com/seradotwav/" class="fab fa-instagram" id="ins-icons" target=_blank></a>
+            <a href="https://twitter.com/KDA_music" class="fab fa-twitter" id="twi-icons" target=_blank></a>
+            <a href="https://www.tiktok.com/@KDA_music" class="fab fa-tiktok" id="tik-icons" target=_blank></a>
+        </div>
+        <div class="thegirls__container">
+            <h3 class="girls__heading3">THE GIRLS</h3>
+        </div>
+
+        <div class="canvas__container">
+            <canvas id="style__Canvas" width="730" height="380"  ></canvas> 
+        </div>
+
+        <!--the girls images-->
+           <div class="girls" id = "girls">  
+             <img class='opaque' src="/img/Ahri.jpg" >
+             
+           </div>    
+        
+        
+     <div id = "swiper__container">
+           <button  class="ahri-btn"  id="btn1"><img src ="/img/ahri_thumb.jpg" > </button>
+           <button  class="akali-btn" id="btn2" ><img src ="/img/akali_thumb.jpg" > </button>
+           <button  class="eve-btn"   id="btn3" ><img src ="/img/evelynn_thumb.jpg" > </button>
+           <button  class="kaisa-btn" id="btn4" ><img src ="/img/kaisa_thumb.jpg" > </button>
+     </div>
+     <br>
+     <hr class="hr-solid">
+     <br>
+     <ol class="description__container">
+         <li class="ahri-descr">
+            <h4 class="ahri-title">AHRI</h4>
+         </li>
+        <li class="akali-descr">
+            <h4 class="akali-title">AKALI</h4>
+        </li>
+        <li class="eve-descr">
+            <h4 class="eve-title">EVE</h4>
+        </li>
+        <li class="kaisa-descr">
+            <h4 class="kaisa-title">KAI'SA</h4>   
+        </li>
+    </ol>
+ <br>
+    </div>
+
+    <!--About section-->
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__img--container">
+                <div class="main__img--card"></div>
+            </div>
+            <div class="main__content">
+                <h2>K/DA Members Profile</h2>
+                <p>K/DA is a virtual K-Pop girl group under Riot Games and are also in the game created by Riot Games known as League of Legends. The group consists of Ahri, Evelynn, Kai’sa, and Akali. The group debuted on November 3rd, 2018 with POP/STAR.</p>
+                <button class="main__btn"><a href="https://www.leagueoflegends.com/en-us/?utm_source=riotbar&utm_medium=productcard%2Bwww.leagueoflegends.com&utm_campaign=lol&utm_content=lol_keyart01" target=_blank>Roit Games</a></button>
+            </div>
+        </div>
+        
+    </div>
+
+    <!--Footer section-->
+    <div class="footer_container">
+        <ul class="footer__menu">
+            <li class="footer__item">
+                <a href="https://www.leagueoflegends.com/en-us/how-to-play/?_gl=1*6pz9fo*_ga*MTcxNjc3MjYxNi4xNjAwNDc4MDE0*_ga_FXBJE5DEDD*MTYzNzM0MDQ0MC43Mi4xLjE2MzczNDIxOTcuNjA." class="footer__links" id="aboutlol" target=_blank>ABOUT LEAGUES OF LEGENDS</a>
+            </li>
+
+            <li class="footer__item">
+                <a href="http://leagueoflegends.na-surveyen2.sgizmo.com/s3/" class="footer__links" id="helpus" target=_blank>HELP US IMPROVE</a>
+            </li>
+            <li class="footer__item">
+                <a href="https://status.riotgames.com/?locale=en_US" class="footer__links" id="serverstatus" target=_blank>SERVER STATUS</a>
+            </li>
+
+            <li class="footer__item">
+                <a href="https://support.riotgames.com/hc/en-us?_gl=1*1fbmnd4*_ga*MTcxNjc3MjYxNi4xNjAwNDc4MDE0*_ga_FXBJE5DEDD*MTYzNzM0MDQ0MC43Mi4xLjE2MzczNDI3MzEuNTg." class="footer__links" id="supp" target=_blank>SUPPORT</a>
+            </li>
+            <li class="footer__item">
+                <a href="https://lolesports.com/en_US/" class="footer__links" id="esports" target=_blank>ESPORTS PRO SITE</a>
+            </li>
+            <li class="footer__item">
+                <a href="https://play.google.com/store/apps/details?id=com.riotgames.mobile.leagueconnect&referrer=singular_click_id%3Dba351813-a874-428c-841e-cfecd6220982" class="footer__links" id="download" target=_blank>DOWNLOAD RIOT MOBILE COMPANION APP</a>
+            </li>
+
+        </ul>
+
+    </div>
+    <div class="riotlogo__container">
+        <div class="riot-footerlogo">
+            <a href="https://www.riotgames.com/en?_gl=1*y5lpn*_ga*MTcxNjc3MjYxNi4xNjAwNDc4MDE0*_ga_FXBJE5DEDD*MTYzNzM0MDQ0MC43Mi4xLjE2MzczNDI4MDUuNTg." id="riot__logo" target=_blank><img src ="/img/riot-logo.jpg"></a>
+        </div>
+    </div>
+    <div class="footer__link--socialicon">
+        <div class="footer__link--items">
+            <span class="smallicons">
+               <a href="https://www.youtube.com/user/riotgamesinc" class="fab fa-youtube " id="ytb" target=_blank></a> 
+            </span>
+            <span class="smallicons">
+                <a href="https://twitter.com/leagueoflegends" class="fab fa-twitter " id="twi" target=_blank></a> 
+             </span>
+             <span class="smallicons">
+                <a href="https://www.instagram.com/leagueoflegends/" class="fab fa-instagram " id="ins" target=_blank></a> 
+             </span>
+             <span class="smallicons">
+                <a href="https://www.facebook.com/leagueoflegends" class="fab fa-facebook " id="fb" target=_blank></a> 
+             </span>
+             <span class="smallicons">
+                <a href="https://www.reddit.com/r/leagueoflegends/" class="fab fa-reddit " id="red" target=_blank></a> 
+             </span> 
+        </div>
+
+    </div>
+
+    <div class="rightsimg__container">
+        <div class="right__items">
+        <br><p><h5>™&© 2021 Riot Games, Inc. League of Legends and all related logos, characters, names and distinctive likenesses thereof are exclusive property of Riot Games, Inc. All Right Reserved.</h5></p>
+        </div>
+    </div>
+
+    <div class="PTC__container">
+        <div class="PTC--items">
+            <span class="ptc">
+                <a href="https://www.riotgames.com/en/privacy-notice?_gl=1*b4kej8*_ga*MTcxNjc3MjYxNi4xNjAwNDc4MDE0*_ga_FXBJE5DEDD*MTYzNzUxNjQ3NS43OS4wLjE2Mzc1MTY0NzkuNTY." id="PN" target=_blank>Privacy Notice</a>
+            </span>
+            <span class="ptc">
+                <a href="https://www.riotgames.com/en/terms-of-service?_gl=1*b4kej8*_ga*MTcxNjc3MjYxNi4xNjAwNDc4MDE0*_ga_FXBJE5DEDD*MTYzNzUxNjQ3NS43OS4wLjE2Mzc1MTY0NzkuNTY." id="TOS" target=_blank>Terms of Service</a>
+            </span>
+        </div>
+    </div>
+    <div class="ESRB__container">
+        <div class="ESRB--logo">
+            <a href="https://www.esrb.org/ratings-guide/" target=_blank><img src="/img/Teen.jpg" width="60"></a>
+            <img width="256" id="Blood" src="/img/Teen__text.jpg">
+        </div>
+    </div>
+    <script src="/js/kda.js"></script>
+</body>
+</html>
