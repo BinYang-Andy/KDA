@@ -1,5 +1,5 @@
 # KDA Website
-This is my web design about K/DA theme from League of Legends. It written in JavaScript and supported by MongoDB cloud that the user can register account follow by clicking sign up
+This is the web design about K/DA theme from League of Legends. It written in JavaScript and supported by MongoDB cloud that the user can register account follow by clicking sign up
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 The page can automatically navigate to relevant section by clicking "Home" "Girls" "Abouts"
 ![KDApart1](https://user-images.githubusercontent.com/61715960/152659289-c106b67e-a959-47fb-a0b4-320e2f93993b.jpg)
