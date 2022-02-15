@@ -1,4 +1,4 @@
-# KDA Website/ Please see the demonstration in folder"KDA DEMO"
+# KDA Website/ Please check the demonstration in folder"KDA DEMO"
 This is my web design about K/DA theme from Riot Game-League of Legends. It written in JavaScript and supported by MongoDB cloud that the user can register account follow by clicking sign up
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 The page can automatically navigate to relevant section by clicking "Home" "Girls" "Abouts"
