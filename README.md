@@ -13,8 +13,7 @@ All icons and services are actived
 ![KDApart5](https://user-images.githubusercontent.com/61715960/152659322-4ef40b75-7f9e-40c4-a26a-dc6464e72a86.jpg)
 ----Sign Up section----
 Users can register their account supported by MongoDB cloud database
-
-![KDApart6](https://user-images.githubusercontent.com/61715960/152659323-01a146a4-e966-4d8f-8bc6-a8e83cfaa897.jpg)
+![KDApart6](https://user-images.githubusercontent.com/61715960/155826541-0cb7d355-13e6-4153-982a-450d96ba1252.png)
 ![KDApart7](https://user-images.githubusercontent.com/61715960/152659324-03da7f7e-9068-408a-9a42-162b3b5ab681.jpg)
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----Mobile Screen size----
